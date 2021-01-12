@@ -9,6 +9,9 @@
   "scripts": {
     "start": "nodemon --exec babel-node src/index.js"
   },
+  "dependencies": {
+    "socket.io": "^3.0.5"
+  },
   "devDependencies": {
     "@babel/cli": "^7.12.10",
     "@babel/core": "^7.12.10",
