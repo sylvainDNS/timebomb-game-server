@@ -1,11 +1,10 @@
 import Koa from 'koa'
 import Http from 'http'
-
-const port = 4444
+import config from './config'
 
 export const start = () => {
   const app = new Koa()
   const server = Http.createServer(app.callback())
 
-  server.listen(port)
+  server.listen(config.port)
 }

@@ -10,6 +10,7 @@
     "start": "DEBUG=koa* nodemon --exec babel-node src/index.js"
   },
   "dependencies": {
+    "common-env": "^6.4.0",
     "koa": "^2.13.1"
   },
   "devDependencies": {
