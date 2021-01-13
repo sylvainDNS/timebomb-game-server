@@ -1,13 +1,12 @@
 import Koa from 'koa'
 import Http from 'http'
 import Io from 'socket.io'
+import config from './config'
 import util from './handler/util'
-
-const port = 4444
 
 const options = {
   cors: {
-    origin: 'http://localhost:3000',
+    origin: config.cors.origin,
     methods: ['GET', 'POST'],
   },
   serveClient: false,
@@ -23,7 +22,7 @@ export const start = () => {
 
   newUser(io)
 
-  server.listen(port)
+  server.listen(config.port)
 }
 
 const newUser = io => {
