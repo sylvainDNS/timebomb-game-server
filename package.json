@@ -7,7 +7,10 @@
   "author": "Sylvain DNS <sylvain.denyse@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon --exec babel-node src/index.js"
+    "start": "DEBUG=koa* nodemon --exec babel-node src/index.js"
+  },
+  "dependencies": {
+    "koa": "^2.13.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.10",

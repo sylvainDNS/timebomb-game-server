@@ -1,1 +1,3 @@
-console.log('Hello World!')
+import * as Server from './server'
+
+Server.start()
